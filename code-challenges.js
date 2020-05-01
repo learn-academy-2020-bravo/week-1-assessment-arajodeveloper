@@ -11,6 +11,26 @@ var temp2 = 350
 var temp3 = 212
 
 
+//create a function that takes an argument
+const boilingPoint = (temp) => {
+  //if: else if: else (below boiling point, at boiling point(122), above boiling point)
+  if(temp <= 35) {
+    return `${temp} is at below boiling point.`
+  }
+  else if(temp >= 212 && temp < 350) {
+    return `${temp} is at boiling point.`
+  }
+  else if(temp >= 350) {
+    return `${temp} is above boiling point.`
+  }
+  else {
+    return null
+  }
+}
+console.log(bolingPoint(temp1));
+
+
+
 
 
 // --------------------2) Create a function that multiplies each number in the array by 5 using a for loop.
@@ -18,6 +38,12 @@ var temp3 = 212
 
 var myNumbers1 = [3, 7, 0, 6, -9]
 
+const multiplyBy5 = (number) => {
+  for(let i of array) {
+    return number * 5
+  }
+}
+console.log(multiplyBy5(myNumbers1));
 
 
 
